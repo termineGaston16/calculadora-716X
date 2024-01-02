@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculadora 716X </title>
+
+    <!-- CSS BS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- ------------------------------------ -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- ------------------------------------ -->
+    <!-- ESTILO DE FUENTE EXTERNA -->
+
+
+    <!-- ------------------------------------ -->
+    <!-- SEO -->
+
+</head>
+
+<body class="bodyIndex">
+
+    <!-- HEADER -->
+    <header class="container-fluid">
+        <div class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-calculator" viewBox="0 0 16 16">
+                    <path
+                        d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                    <path
+                        d="M4 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+                </svg>
+                <span class="fs-4">Simple header</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-gear-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ------------------------------------ -->
+    <!-- MAIN -->
+    <main class="container-fluid mainIndex">
+
+        <!-- cuerpo -->
+        <div class="calcuCuerpo">
+
+            <!-- cabeza -->
+            <div class="calcuCabeza">
+                <div class="calcuHoraYFecha">
+
+                </div>
+                <div class="calcuAutor">
+
+                </div>
+            </div>
+
+            <!-- barra -->
+            <div class="calcuBarra" id="barraDeNumeros">
+
+            </div>
+
+            <!-- teclado -->
+            <div class="calcuTeclado">
+                <div class="container mt-4 calcuTecladoSub">
+
+                    <!-- fila 1 -->
+                    <div class="row calcuTecladoSub1">
+                        <div class="col-xl-3 col-md-3 col-sm-3 calcuTecladoSub2">
+                            <div class="card calcuTecladoSub3">
+                                <div class="card-body calcuTecladoContenido">
+                                    ON/OFF
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3 col-sm-3 calcuTecladoSub2">
+                            <div class="card calcuTecladoSub3">
+                                <div class="card-body calcuTecladoContenido">
+                                    √
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3 col-sm-3 calcuTecladoSub2">
+                            <div class="card calcuTecladoSub3">
+                                <div class="card-body calcuTecladoContenido">
+                                    %
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3 col-sm-3 calcuTecladoSub2">
+                            <div class="card calcuTecladoSub3">
+                                <div class="card-body calcuTecladoContenido" id="btnDivision">
+                                    ÷
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <!-- fila 2 -->
+                    <div class="row calcuTecladoSub1">
+                        <div class="col-xl-3 col-md-3 col-sm-3 calcuTecladoSub2">
+                            <div class="card calcuTecladoSub3">
+                                <div class="card-body calcuTecladoContenido" id="btn7">
+                                    7
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3 col-sm-3 calcuTecladoSub2">
+                            <div class="card calcuTecladoSub3">
+                                <div class="card-body calcuTecladoContenido" id="btn8">
+                                    8
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3 col-sm-3 calcuTecladoSub2">
+                            <div class="card calcuTecladoSub3">
+                                <div class="card-body calcuTecladoContenido" id="btn9">
+                                    9
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3 col-sm-3 calcuTecladoSub2">
+                            <div class="card calcuTecladoSub3">
+                                <div class="card-body calcuTecladoContenido" id="btnMultiplicacion">
+                                    x
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- fila 3 -->
+                    <div class="row calcuTecladoSub1">
+                        <div class="col-xl-3 col-md-3 col-sm-3 calcuTecladoSub2">
+                            <div class="card calcuTecladoSub3">
+                                <div class="card-body calcuTecladoContenido" id="btn4">
+                                    4
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3 col-sm-3 calcuTecladoSub2">
+                            <div class="card calcuTecladoSub3">
+                                <div class="card-body calcuTecladoContenido" id="btn5">     
+                                    5
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3 col-sm-3 calcuTecladoSub2">
+                            <div class="card calcuTecladoSub3">
+                                <div class="card-body calcuTecladoContenido" id="btn6">
+                                    6
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3 col-sm-3 calcuTecladoSub2">
+                            <div class="card calcuTecladoSub3">
+                                <div class="card-body calcuTecladoContenido" id="btnResta">
+                                    -
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- fila 4 -->
+                    <div class="row calcuTecladoSub1">
+                        <div class="col-xl-3 col-md-3 col-sm-3 calcuTecladoSub2">
+                            <div class="card calcuTecladoSub3">
+                                <div class="card-body calcuTecladoContenido" id="btn1">
+                                    1
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3 col-sm-3 calcuTecladoSub2">
+                            <div class="card calcuTecladoSub3">
+                                <div class="card-body calcuTecladoContenido" id="btn2">
+                                    2
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3 col-sm-3 calcuTecladoSub2">
+                            <div class="card calcuTecladoSub3">
+                                <div class="card-body calcuTecladoContenido" id="btn3">
+                                    3
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3 col-sm-3 calcuTecladoSub2">
+                            <div class="card calcuTecladoSub3">
+                                <div class="card-body calcuTecladoContenido" id="btnSuma">
+                                    +
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- fila 5 -->
+                    <div class="row calcuTecladoSub1">
+                        <div class="col-xl-3 col-md-3 col-sm-3 calcuTecladoSub2">
+                            <div class="card calcuTecladoSub3">
+                                <div class="card-body calcuTecladoContenido" id="btn0">
+                                    0
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3 col-sm-3 calcuTecladoSub2">
+                            <div class="card calcuTecladoSub3">
+                                <div class="card-body calcuTecladoContenido" id="btnPunto">
+                                    .
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3 col-sm-3 calcuTecladoSub2">
+                            <div class="card calcuTecladoSub3">
+                                <div class="card-body calcuTecladoContenido" id="btnIgual">
+                                    =
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-3 col-sm-3 calcuTecladoSub2">
+                            <div class="card calcuTecladoSub3">
+                                <div class="card-body calcuTecladoContenido" id="btnClear">
+                                    Clear
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+    </main>
+
+
+
+    <!-- ------------------------------------ -->
+    <!-- SWEET ALERT -->
+
+
+    <!-- ------------------------------------ -->
+    <!-- JS BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- ------------------------------------ -->
+    <!-- JS -->
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

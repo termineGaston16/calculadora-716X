@@ -1,0 +1,87 @@
+.mainIndex {
+    @include allCentro;
+
+    /* cuerpo */
+    .calcuCuerpo {
+        border: 1px solid red;
+
+        width: 60vw;
+        height: 80vh;
+
+        border-radius: 20px;
+
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+
+        padding: 2%;
+        gap: 4%;
+
+        /* cabeza */
+        .calcuCabeza {
+            border: 1px solid red;
+
+            width: 100%;
+            height: 20%;
+
+            @include allCentro;
+            flex-direction: row;
+            gap: 10%;
+
+            .calcuHoraYFecha {
+                border: 1px solid red;
+                width: 30%;
+                height: 90%;
+
+            }
+
+            .calcuAutor {
+                border: 1px solid red;
+                width: 30%;
+                height: 90%;
+            }
+        }
+
+        /* barra */
+        .calcuBarra {
+            border: 1px solid red;
+
+            width: 100%;
+            height: 20%;
+            border-radius: 15px;
+
+            display: flex;
+            align-items: center;
+            justify-content: end;
+
+            font-size: 2.0rem;
+
+
+
+        }
+
+        /* teclado */
+        .calcuTeclado {
+            border: 1px solid red;
+
+            width: 100%;
+            height: 70%;
+
+            border-radius: 15px;
+
+            .calcuTecladoSub {
+                .calcuTecladoSub1 {
+                    .calcuTecladoSub2 {
+                        .calcuTecladoSub3 {
+                            .calcuTecladoContenido {
+                                @include allCentro;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
