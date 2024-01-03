@@ -26,25 +26,25 @@
 <body class="bodyIndex">
 
     <!-- HEADER -->
-    <header class="container-fluid">
-        <div class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a href="/"
-                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-calculator" viewBox="0 0 16 16">
+    <header class="container-fluid headerIndex">
+        <div class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom headerIndexSub">
+            <a href="index.html"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none headerIndexLogo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                    class="bi bi-calculator headerIndexLogoImage" viewBox="0 0 16 16">
                     <path
                         d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
                     <path
                         d="M4 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
                 </svg>
-                <span class="fs-4">Simple header</span>
+                <span class="headerIndexLogoTitle">Calculadora 716X</span>
             </a>
 
-            <ul class="nav nav-pills">
-                <li class="nav-item">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-gear-fill" viewBox="0 0 16 16">
+            <ul class="nav nav-pills headerIndexUl">
+                <li class="nav-item headerIndexLi">
+                    <button type="button" class="btn btn-primary headerIndexBotonAjustes" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-gear-fill headerIndexBotonAjustesLogo" viewBox="0 0 16 16">
                             <path
                                 d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
                         </svg>
@@ -83,17 +83,16 @@
 
             <!-- cabeza -->
             <div class="calcuCabeza">
-                <div class="calcuHoraYFecha">
-
+                <div class="calcuHoraYFecha" id="idCalcuHoraYFecha">
+                    <p class="calcuHoraYFechaContent">00:00:00 <br> 0/0/0000</p>
                 </div>
                 <div class="calcuAutor">
-
+                    <p class="calcuAutorContent">Esta calculadora es de: <br> aaaaaaaaaaaaaaaaaaaaaaaaa</p>
                 </div>
             </div>
 
             <!-- barra -->
             <div class="calcuBarra" id="barraDeNumeros">
-
             </div>
 
             <!-- teclado -->
@@ -111,14 +110,14 @@
                         </div>
                         <div class="col-xl-3 col-md-3 col-sm-3 calcuTecladoSub2">
                             <div class="card calcuTecladoSub3">
-                                <div class="card-body calcuTecladoContenido">
+                                <div class="card-body calcuTecladoContenido" id="btnRaiz">
                                     √
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-3 col-sm-3 calcuTecladoSub2">
                             <div class="card calcuTecladoSub3">
-                                <div class="card-body calcuTecladoContenido">
+                                <div class="card-body calcuTecladoContenido" id="btnPorcentaje">
                                     %
                                 </div>
                             </div>
@@ -131,7 +130,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
 
                     <!-- fila 2 -->
                     <div class="row calcuTecladoSub1">
@@ -176,7 +175,7 @@
                         </div>
                         <div class="col-xl-3 col-md-3 col-sm-3 calcuTecladoSub2">
                             <div class="card calcuTecladoSub3">
-                                <div class="card-body calcuTecladoContenido" id="btn5">     
+                                <div class="card-body calcuTecladoContenido" id="btn5">
                                     5
                                 </div>
                             </div>
@@ -247,15 +246,15 @@
                         </div>
                         <div class="col-xl-3 col-md-3 col-sm-3 calcuTecladoSub2">
                             <div class="card calcuTecladoSub3">
-                                <div class="card-body calcuTecladoContenido" id="btnIgual">
-                                    =
+                                <div class="card-body calcuTecladoContenido" id="btnClear">
+                                    Clear
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-3 col-sm-3 calcuTecladoSub2">
                             <div class="card calcuTecladoSub3">
-                                <div class="card-body calcuTecladoContenido" id="btnClear">
-                                    Clear
+                                <div class="card-body calcuTecladoContenido" id="btnIgual">
+                                    =
                                 </div>
                             </div>
                         </div>

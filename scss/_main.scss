@@ -33,6 +33,13 @@
                 border: 1px solid red;
                 width: 30%;
                 height: 90%;
+                @include allCentro;
+
+                .calcuHoraYFechaContent{
+                    text-align: center;
+                    font-size: 1.5rem;
+                    margin-top: 5%;
+                }
 
             }
 
@@ -40,6 +47,13 @@
                 border: 1px solid red;
                 width: 30%;
                 height: 90%;
+                @include allCentro;
+
+                .calcuAutorContent{
+                    text-align: center;
+                    font-size: 1.1rem;
+                    margin-top: 5%;
+                }
             }
         }
 
@@ -56,7 +70,7 @@
             justify-content: end;
 
             font-size: 2.0rem;
-
+            padding-right: 2%;
 
 
         }
@@ -77,6 +91,7 @@
                             .calcuTecladoContenido {
                                 @include allCentro;
                                 cursor: pointer;
+
                             }
                         }
                     }

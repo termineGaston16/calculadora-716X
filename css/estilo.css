@@ -44,11 +44,27 @@ html {
   border: 1px solid red;
   width: 30%;
   height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainIndex .calcuCuerpo .calcuCabeza .calcuHoraYFecha .calcuHoraYFechaContent {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 5%;
 }
 .mainIndex .calcuCuerpo .calcuCabeza .calcuAutor {
   border: 1px solid red;
   width: 30%;
   height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainIndex .calcuCuerpo .calcuCabeza .calcuAutor .calcuAutorContent {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 5%;
 }
 .mainIndex .calcuCuerpo .calcuBarra {
   border: 1px solid red;
@@ -59,6 +75,7 @@ html {
   align-items: center;
   justify-content: end;
   font-size: 2rem;
+  padding-right: 2%;
 }
 .mainIndex .calcuCuerpo .calcuTeclado {
   border: 1px solid red;
@@ -71,6 +88,22 @@ html {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+.headerIndex .headerIndexSub {
+  /* Logo */
+  /* Ajustes */
+}
+.headerIndex .headerIndexSub .headerIndexLogo {
+  width: 50%;
+  gap: 3%;
+  margin-left: 4%;
+}
+.headerIndex .headerIndexSub .headerIndexLogo .headerIndexLogoTitle {
+  font-size: 1.5rem;
+}
+.headerIndex .headerIndexSub .headerIndexUl {
+  margin-right: 4%;
 }
 
 /*# sourceMappingURL=estilo.css.map */

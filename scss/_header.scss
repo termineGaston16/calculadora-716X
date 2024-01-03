@@ -1,0 +1,31 @@
+.headerIndex{  
+    .headerIndexSub{
+        /* Logo */
+        .headerIndexLogo{
+            width: 50%;
+            gap: 3%;
+
+            margin-left: 4%;
+
+            .headerIndexLogoImage{
+
+            }
+            .headerIndexLogoTitle{
+               font-size: 1.5rem;
+            }
+        }
+
+        /* Ajustes */
+        .headerIndexUl{
+            margin-right: 4%;
+
+            .headerIndexLi{
+                .headerIndexBotonAjustes{
+                    .headerIndexBotonAjustesLogo{
+
+                    }
+                }
+            }
+        }
+    }
+}
