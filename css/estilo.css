@@ -3,7 +3,9 @@
   padding: 0;
 }
 
-@font-face {}
+@font-face {
+  font-family: "Rubik Doodle Shadow", system-ui;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -16,7 +18,6 @@ html {
   /* cuerpo */
 }
 .mainIndex .calcuCuerpo {
-  border: 1px solid red;
   width: 60vw;
   height: 80vh;
   border-radius: 20px;
@@ -31,7 +32,6 @@ html {
   /* teclado */
 }
 .mainIndex .calcuCuerpo .calcuCabeza {
-  border: 1px solid red;
   width: 100%;
   height: 20%;
   display: flex;
@@ -41,7 +41,6 @@ html {
   gap: 10%;
 }
 .mainIndex .calcuCuerpo .calcuCabeza .calcuHoraYFecha {
-  border: 1px solid red;
   width: 30%;
   height: 90%;
   display: flex;
@@ -54,7 +53,6 @@ html {
   margin-top: 5%;
 }
 .mainIndex .calcuCuerpo .calcuCabeza .calcuAutor {
-  border: 1px solid red;
   width: 30%;
   height: 90%;
   display: flex;
@@ -67,7 +65,6 @@ html {
   margin-top: 5%;
 }
 .mainIndex .calcuCuerpo .calcuBarra {
-  border: 1px solid red;
   width: 100%;
   height: 20%;
   border-radius: 15px;
@@ -78,7 +75,6 @@ html {
   padding-right: 2%;
 }
 .mainIndex .calcuCuerpo .calcuTeclado {
-  border: 1px solid red;
   width: 100%;
   height: 70%;
   border-radius: 15px;
@@ -104,6 +100,426 @@ html {
 }
 .headerIndex .headerIndexSub .headerIndexUl {
   margin-right: 4%;
+}
+/* cian */
+.cromaCian {
+  /* header */
+  /* main */
+  /* cuerpo */
+}
+.cromaCian .headerIndex {
+  background: linear-gradient(10deg, rgb(225, 251, 251), rgb(75, 255, 255));
+}
+.cromaCian .headerIndex .headerIndexSub {
+  /* Logo */
+  /* Ajustes */
+}
+.cromaCian .headerIndex .headerIndexSub .headerIndexLogo .headerIndexLogoImage {
+  color: rgb(0, 85, 255);
+}
+.cromaCian .headerIndex .headerIndexSub .headerIndexLogo .headerIndexLogoTitle {
+  color: rgb(0, 85, 255);
+}
+.cromaCian .headerIndex .headerIndexSub .headerIndexUl .headerIndexLi .headerIndexBotonAjustes {
+  background-color: rgb(0, 85, 255);
+  transition: 0.3s;
+}
+.cromaCian .headerIndex .headerIndexSub .headerIndexUl .headerIndexLi .headerIndexBotonAjustes:hover {
+  border: 1px white solid;
+}
+.cromaCian .headerIndex .headerIndexSub .headerIndexUl .headerIndexLi .headerIndexBotonAjustes:hover .headerIndexBotonAjustesLogo {
+  color: white;
+}
+.cromaCian .headerIndex .headerIndexSub .headerIndexUl .headerIndexLi .headerIndexBotonAjustes:active {
+  transform: scale(0.8);
+}
+.cromaCian .headerIndex .headerIndexSub .headerIndexUl .headerIndexLi .headerIndexBotonAjustes .headerIndexBotonAjustesLogo {
+  color: rgb(75, 255, 255);
+  transition: 0.3s;
+}
+.cromaCian .calcuCuerpo {
+  background: linear-gradient(190deg, rgb(173, 253, 253), rgb(30, 255, 255));
+  /* cabeza */
+  /* barra */
+  /* teclado */
+}
+.cromaCian .calcuCuerpo .calcuCabeza {
+  background-color: white;
+}
+.cromaCian .calcuCuerpo .calcuCabeza .calcuHoraYFecha {
+  border: 1px solid rgb(136, 146, 254);
+  border-radius: 15px;
+}
+.cromaCian .calcuCuerpo .calcuCabeza .calcuHoraYFecha .calcuHoraYFechaContent {
+  color: rgb(75, 90, 255);
+}
+.cromaCian .calcuCuerpo .calcuCabeza .calcuAutor {
+  border: 1px solid rgb(136, 146, 254);
+  border-radius: 15px;
+}
+.cromaCian .calcuCuerpo .calcuCabeza .calcuAutor .calcuAutorContent {
+  color: rgb(75, 90, 255);
+}
+.cromaCian .calcuCuerpo .calcuBarra {
+  background-color: white;
+  color: rgb(75, 90, 255);
+}
+.cromaCian .calcuCuerpo .calcuTeclado .calcuTecladoSub .calcuTecladoSub1 .calcuTecladoSub2 .calcuTecladoSub3 {
+  border: none;
+  border-radius: 15px;
+}
+.cromaCian .calcuCuerpo .calcuTeclado .calcuTecladoSub .calcuTecladoSub1 .calcuTecladoSub2 .calcuTecladoSub3 .calcuTecladoContenido {
+  background-color: white;
+  color: rgb(75, 90, 255);
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.cromaCian .calcuCuerpo .calcuTeclado .calcuTecladoSub .calcuTecladoSub1 .calcuTecladoSub2 .calcuTecladoSub3 .calcuTecladoContenido:hover {
+  background-color: rgb(44, 65, 254);
+  color: white;
+}
+.cromaCian .calcuCuerpo .calcuTeclado .calcuTecladoSub .calcuTecladoSub1 .calcuTecladoSub2 .calcuTecladoSub3 .calcuTecladoContenido:active {
+  background-color: rgb(75, 255, 255);
+}
+.cromaCian .calcuCuerpo .calcuTeclado .calcuTecladoSub .calcuTecladoSub1 .calcuTecladoSub2 .calcuTecladoSub3 .calcuTecladoContenido:focus {
+  background-color: rgb(75, 255, 255);
+}
+
+/* atardecer */
+.cromaAtardecer {
+  /* header */
+  /* main */
+  /* cuerpo */
+}
+.cromaAtardecer .headerIndex {
+  background: linear-gradient(10deg, yellow, rgb(255, 64, 0));
+}
+.cromaAtardecer .headerIndex .headerIndexSub {
+  /* Logo */
+  /* Ajustes */
+}
+.cromaAtardecer .headerIndex .headerIndexSub .headerIndexLogo .headerIndexLogoImage {
+  color: white;
+}
+.cromaAtardecer .headerIndex .headerIndexSub .headerIndexLogo .headerIndexLogoTitle {
+  color: white;
+}
+.cromaAtardecer .headerIndex .headerIndexSub .headerIndexUl .headerIndexLi .headerIndexBotonAjustes {
+  background-color: white;
+  border: none;
+  transition: 0.3s;
+}
+.cromaAtardecer .headerIndex .headerIndexSub .headerIndexUl .headerIndexLi .headerIndexBotonAjustes:hover {
+  background-color: yellow;
+}
+.cromaAtardecer .headerIndex .headerIndexSub .headerIndexUl .headerIndexLi .headerIndexBotonAjustes:hover .headerIndexBotonAjustesLogo {
+  color: white;
+}
+.cromaAtardecer .headerIndex .headerIndexSub .headerIndexUl .headerIndexLi .headerIndexBotonAjustes:active {
+  transform: scale(0.8);
+}
+.cromaAtardecer .headerIndex .headerIndexSub .headerIndexUl .headerIndexLi .headerIndexBotonAjustes .headerIndexBotonAjustesLogo {
+  color: rgb(255, 64, 0);
+  transition: 0.3s;
+}
+.cromaAtardecer .calcuCuerpo {
+  background: linear-gradient(190deg, rgb(236, 255, 170), rgb(251, 251, 44));
+  /* cabeza */
+  /* barra */
+  /* teclado */
+}
+.cromaAtardecer .calcuCuerpo .calcuCabeza {
+  background-color: white;
+}
+.cromaAtardecer .calcuCuerpo .calcuCabeza .calcuHoraYFecha {
+  border: 1px solid rgb(255, 132, 0);
+  border-radius: 15px;
+}
+.cromaAtardecer .calcuCuerpo .calcuCabeza .calcuHoraYFecha .calcuHoraYFechaContent {
+  color: rgb(255, 132, 0);
+}
+.cromaAtardecer .calcuCuerpo .calcuCabeza .calcuAutor {
+  border: 1px solid rgb(255, 132, 0);
+  border-radius: 15px;
+}
+.cromaAtardecer .calcuCuerpo .calcuCabeza .calcuAutor .calcuAutorContent {
+  color: rgb(255, 132, 0);
+}
+.cromaAtardecer .calcuCuerpo .calcuBarra {
+  background-color: white;
+  color: rgb(255, 132, 0);
+}
+.cromaAtardecer .calcuCuerpo .calcuTeclado .calcuTecladoSub .calcuTecladoSub1 .calcuTecladoSub2 .calcuTecladoSub3 {
+  border: none;
+  border-radius: 15px;
+}
+.cromaAtardecer .calcuCuerpo .calcuTeclado .calcuTecladoSub .calcuTecladoSub1 .calcuTecladoSub2 .calcuTecladoSub3 .calcuTecladoContenido {
+  background-color: white;
+  color: rgb(255, 132, 0);
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.cromaAtardecer .calcuCuerpo .calcuTeclado .calcuTecladoSub .calcuTecladoSub1 .calcuTecladoSub2 .calcuTecladoSub3 .calcuTecladoContenido:hover {
+  background-color: rgb(255, 234, 0);
+  color: white;
+}
+.cromaAtardecer .calcuCuerpo .calcuTeclado .calcuTecladoSub .calcuTecladoSub1 .calcuTecladoSub2 .calcuTecladoSub3 .calcuTecladoContenido:active {
+  background-color: rgb(255, 85, 0);
+}
+.cromaAtardecer .calcuCuerpo .calcuTeclado .calcuTecladoSub .calcuTecladoSub1 .calcuTecladoSub2 .calcuTecladoSub3 .calcuTecladoContenido:focus {
+  background-color: rgb(255, 85, 0);
+}
+
+/* Escarlata */
+.cromaEscarlata {
+  background-color: black;
+  /* header */
+  /* main */
+  /* cuerpo */
+}
+.cromaEscarlata .headerIndex {
+  background-color: red;
+}
+.cromaEscarlata .headerIndex .headerIndexSub {
+  /* Logo */
+  /* Ajustes */
+}
+.cromaEscarlata .headerIndex .headerIndexSub .headerIndexLogo .headerIndexLogoImage {
+  color: black;
+}
+.cromaEscarlata .headerIndex .headerIndexSub .headerIndexLogo .headerIndexLogoTitle {
+  color: black;
+}
+.cromaEscarlata .headerIndex .headerIndexSub .headerIndexUl .headerIndexLi .headerIndexBotonAjustes {
+  background-color: black;
+  border: none;
+  transition: 0.3s;
+}
+.cromaEscarlata .headerIndex .headerIndexSub .headerIndexUl .headerIndexLi .headerIndexBotonAjustes:hover {
+  background-color: white;
+}
+.cromaEscarlata .headerIndex .headerIndexSub .headerIndexUl .headerIndexLi .headerIndexBotonAjustes:hover .headerIndexBotonAjustesLogo {
+  color: black;
+}
+.cromaEscarlata .headerIndex .headerIndexSub .headerIndexUl .headerIndexLi .headerIndexBotonAjustes:active {
+  transform: scale(0.8);
+}
+.cromaEscarlata .headerIndex .headerIndexSub .headerIndexUl .headerIndexLi .headerIndexBotonAjustes .headerIndexBotonAjustesLogo {
+  color: red;
+  transition: 0.3s;
+}
+.cromaEscarlata .calcuCuerpo {
+  background-color: red;
+  /* cabeza */
+  /* barra */
+  /* teclado */
+}
+.cromaEscarlata .calcuCuerpo .calcuCabeza {
+  background-color: black;
+}
+.cromaEscarlata .calcuCuerpo .calcuCabeza .calcuHoraYFecha {
+  border: 1px solid rgb(255, 36, 36);
+  border-radius: 15px;
+}
+.cromaEscarlata .calcuCuerpo .calcuCabeza .calcuHoraYFecha .calcuHoraYFechaContent {
+  color: rgb(255, 36, 36);
+}
+.cromaEscarlata .calcuCuerpo .calcuCabeza .calcuAutor {
+  border: 1px solid rgb(255, 36, 36);
+  border-radius: 15px;
+}
+.cromaEscarlata .calcuCuerpo .calcuCabeza .calcuAutor .calcuAutorContent {
+  color: rgb(255, 36, 36);
+}
+.cromaEscarlata .calcuCuerpo .calcuBarra {
+  background-color: black;
+  color: rgb(255, 36, 36);
+}
+.cromaEscarlata .calcuCuerpo .calcuTeclado .calcuTecladoSub .calcuTecladoSub1 .calcuTecladoSub2 .calcuTecladoSub3 {
+  border: none;
+  border-radius: 15px;
+}
+.cromaEscarlata .calcuCuerpo .calcuTeclado .calcuTecladoSub .calcuTecladoSub1 .calcuTecladoSub2 .calcuTecladoSub3 .calcuTecladoContenido {
+  background-color: black;
+  color: rgb(255, 36, 36);
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.cromaEscarlata .calcuCuerpo .calcuTeclado .calcuTecladoSub .calcuTecladoSub1 .calcuTecladoSub2 .calcuTecladoSub3 .calcuTecladoContenido:hover {
+  background-color: rgb(255, 24, 24);
+  color: white;
+}
+.cromaEscarlata .calcuCuerpo .calcuTeclado .calcuTecladoSub .calcuTecladoSub1 .calcuTecladoSub2 .calcuTecladoSub3 .calcuTecladoContenido:active {
+  background-color: white;
+}
+.cromaEscarlata .calcuCuerpo .calcuTeclado .calcuTecladoSub .calcuTecladoSub1 .calcuTecladoSub2 .calcuTecladoSub3 .calcuTecladoContenido:focus {
+  background-color: white;
+}
+
+/* squid sisters */
+.cromaSquidSisters {
+  /* header */
+  /* main */
+  /* cuerpo */
+}
+.cromaSquidSisters .headerIndex {
+  background: linear-gradient(10deg, rgb(0, 255, 30), rgb(137, 2, 255));
+}
+.cromaSquidSisters .headerIndex .headerIndexSub {
+  /* Logo */
+  /* Ajustes */
+}
+.cromaSquidSisters .headerIndex .headerIndexSub .headerIndexLogo .headerIndexLogoImage {
+  color: white;
+}
+.cromaSquidSisters .headerIndex .headerIndexSub .headerIndexLogo .headerIndexLogoTitle {
+  color: white;
+}
+.cromaSquidSisters .headerIndex .headerIndexSub .headerIndexUl .headerIndexLi .headerIndexBotonAjustes {
+  background-color: rgb(0, 255, 30);
+  border: none;
+  transition: 0.3s;
+}
+.cromaSquidSisters .headerIndex .headerIndexSub .headerIndexUl .headerIndexLi .headerIndexBotonAjustes:hover {
+  background-color: white;
+}
+.cromaSquidSisters .headerIndex .headerIndexSub .headerIndexUl .headerIndexLi .headerIndexBotonAjustes:hover .headerIndexBotonAjustesLogo {
+  color: rgb(0, 255, 30);
+}
+.cromaSquidSisters .headerIndex .headerIndexSub .headerIndexUl .headerIndexLi .headerIndexBotonAjustes:active {
+  transform: scale(0.8);
+}
+.cromaSquidSisters .headerIndex .headerIndexSub .headerIndexUl .headerIndexLi .headerIndexBotonAjustes .headerIndexBotonAjustesLogo {
+  color: rgb(137, 2, 255);
+  transition: 0.3s;
+}
+.cromaSquidSisters .calcuCuerpo {
+  background: linear-gradient(190deg, rgb(137, 2, 255), rgb(0, 255, 30));
+  /* cabeza */
+  /* barra */
+  /* teclado */
+}
+.cromaSquidSisters .calcuCuerpo .calcuCabeza {
+  background-color: white;
+}
+.cromaSquidSisters .calcuCuerpo .calcuCabeza .calcuHoraYFecha {
+  border: 1px solid rgb(0, 255, 30);
+  border-radius: 15px;
+}
+.cromaSquidSisters .calcuCuerpo .calcuCabeza .calcuHoraYFecha .calcuHoraYFechaContent {
+  color: rgb(0, 255, 30);
+}
+.cromaSquidSisters .calcuCuerpo .calcuCabeza .calcuAutor {
+  border: 1px solid rgb(0, 255, 30);
+  border-radius: 15px;
+}
+.cromaSquidSisters .calcuCuerpo .calcuCabeza .calcuAutor .calcuAutorContent {
+  color: rgb(0, 255, 30);
+}
+.cromaSquidSisters .calcuCuerpo .calcuBarra {
+  background-color: white;
+  color: rgb(0, 255, 30);
+}
+.cromaSquidSisters .calcuCuerpo .calcuTeclado .calcuTecladoSub .calcuTecladoSub1 .calcuTecladoSub2 .calcuTecladoSub3 {
+  border: none;
+  border-radius: 15px;
+}
+.cromaSquidSisters .calcuCuerpo .calcuTeclado .calcuTecladoSub .calcuTecladoSub1 .calcuTecladoSub2 .calcuTecladoSub3 .calcuTecladoContenido {
+  background-color: white;
+  color: rgb(0, 255, 30);
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.cromaSquidSisters .calcuCuerpo .calcuTeclado .calcuTecladoSub .calcuTecladoSub1 .calcuTecladoSub2 .calcuTecladoSub3 .calcuTecladoContenido:hover {
+  background-color: rgb(137, 2, 255);
+  color: white;
+}
+.cromaSquidSisters .calcuCuerpo .calcuTeclado .calcuTecladoSub .calcuTecladoSub1 .calcuTecladoSub2 .calcuTecladoSub3 .calcuTecladoContenido:active {
+  background-color: rgb(75, 255, 255);
+}
+.cromaSquidSisters .calcuCuerpo .calcuTeclado .calcuTecladoSub .calcuTecladoSub1 .calcuTecladoSub2 .calcuTecladoSub3 .calcuTecladoContenido:focus {
+  background-color: rgb(75, 255, 255);
+}
+
+.modalIndex {
+  background-color: rgba(0, 0, 0, 0.267);
+}
+.modalIndex .modalIndexSub {
+  margin-left: 62%;
+}
+.modalIndex .modalIndexSub .modalIndexSub1 {
+  background-color: rgb(11, 11, 12);
+  border: 1px solid white;
+  /* header */
+  /* body */
+}
+.modalIndex .modalIndexSub .modalIndexSub1 .modalIndexHeader .modalIndexHeaderTitulo {
+  color: white;
+}
+.modalIndex .modalIndexSub .modalIndexSub1 .modalIndexHeader .modalIndexHeaderBtnClose {
+  background-color: white !important;
+}
+.modalIndex .modalIndexSub .modalIndexSub1 .modalIndexBody {
+  /* personalizar nombre */
+  /* cambiar croma */
+}
+.modalIndex .modalIndexSub .modalIndexSub1 .modalIndexBody .modalIndexBodyPersonalizarNombre .modalIndexBodyPersonalizarNombreTitulo,
+.modalIndex .modalIndexSub .modalIndexSub1 .modalIndexBody .modalIndexBodyPersonalizarNombre .modalIndexBodyPersonalizarNombreDescripcion {
+  color: white;
+}
+.modalIndex .modalIndexSub .modalIndexSub1 .modalIndexBody .modalIndexBodyPersonalizarNombre .modalIndexBodyPersonalizarNombreInput {
+  background-color: black;
+  width: 50%;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+}
+.modalIndex .modalIndexSub .modalIndexSub1 .modalIndexBody .modalIndexBodyPersonalizarNombre .modalIndexBodyPersonalizarNombrebtnAsignar {
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.modalIndex .modalIndexSub .modalIndexSub1 .modalIndexBody .modalIndexBodyCroma .modalIndexBodyCromaTitulo,
+.modalIndex .modalIndexSub .modalIndexSub1 .modalIndexBody .modalIndexBodyCroma .modalIndexBodyCromaDescripcion {
+  color: white;
+}
+.modalIndex .modalIndexSub .modalIndexSub1 .modalIndexBody .modalIndexBodyCroma .modalIndexBodyCromaContenedor .modalIndexBodyCromaContenedorSub .modalIndexBodyCromaContenedorSub1 .modalIndexBodyCromaContenedorCian,
+.modalIndex .modalIndexSub .modalIndexSub1 .modalIndexBody .modalIndexBodyCroma .modalIndexBodyCromaContenedor .modalIndexBodyCromaContenedorSub .modalIndexBodyCromaContenedorSub1 .modalIndexBodyCromaContenedorAtardecer,
+.modalIndex .modalIndexSub .modalIndexSub1 .modalIndexBody .modalIndexBodyCroma .modalIndexBodyCromaContenedor .modalIndexBodyCromaContenedorSub .modalIndexBodyCromaContenedorSub1 .modalIndexBodyCromaContenedorEscarlata,
+.modalIndex .modalIndexSub .modalIndexSub1 .modalIndexBody .modalIndexBodyCroma .modalIndexBodyCromaContenedor .modalIndexBodyCromaContenedorSub .modalIndexBodyCromaContenedorSub1 .modalIndexBodyCromaContenedorSquidSisters {
+  background: linear-gradient(10deg, rgb(225, 251, 251), rgb(75, 255, 255));
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.modalIndex .modalIndexSub .modalIndexSub1 .modalIndexBody .modalIndexBodyCroma .modalIndexBodyCromaContenedor .modalIndexBodyCromaContenedorSub .modalIndexBodyCromaContenedorSub1 .modalIndexBodyCromaContenedorCian .modalIndexBodyCromaContenedorTitulo,
+.modalIndex .modalIndexSub .modalIndexSub1 .modalIndexBody .modalIndexBodyCroma .modalIndexBodyCromaContenedor .modalIndexBodyCromaContenedorSub .modalIndexBodyCromaContenedorSub1 .modalIndexBodyCromaContenedorAtardecer .modalIndexBodyCromaContenedorTitulo,
+.modalIndex .modalIndexSub .modalIndexSub1 .modalIndexBody .modalIndexBodyCroma .modalIndexBodyCromaContenedor .modalIndexBodyCromaContenedorSub .modalIndexBodyCromaContenedorSub1 .modalIndexBodyCromaContenedorEscarlata .modalIndexBodyCromaContenedorTitulo,
+.modalIndex .modalIndexSub .modalIndexSub1 .modalIndexBody .modalIndexBodyCroma .modalIndexBodyCromaContenedor .modalIndexBodyCromaContenedorSub .modalIndexBodyCromaContenedorSub1 .modalIndexBodyCromaContenedorSquidSisters .modalIndexBodyCromaContenedorTitulo {
+  color: rgb(0, 0, 0);
+}
+.modalIndex .modalIndexSub .modalIndexSub1 .modalIndexBody .modalIndexBodyCroma .modalIndexBodyCromaContenedor .modalIndexBodyCromaContenedorSub .modalIndexBodyCromaContenedorSub1 .modalIndexBodyCromaContenedorAtardecer {
+  background: linear-gradient(10deg, yellow, rgb(255, 64, 0));
+}
+.modalIndex .modalIndexSub .modalIndexSub1 .modalIndexBody .modalIndexBodyCroma .modalIndexBodyCromaContenedor .modalIndexBodyCromaContenedorSub .modalIndexBodyCromaContenedorSub1 .modalIndexBodyCromaContenedorEscarlata {
+  background: none;
+  background-color: red;
+}
+.modalIndex .modalIndexSub .modalIndexSub1 .modalIndexBody .modalIndexBodyCroma .modalIndexBodyCromaContenedor .modalIndexBodyCromaContenedorSub .modalIndexBodyCromaContenedorSub1 .modalIndexBodyCromaContenedorSquidSisters {
+  background: linear-gradient(10deg, rgb(0, 255, 30), rgb(137, 2, 255));
+}
+.modalIndex .modalIndexSub .modalIndexSub1 .modalIndexBody .modalIndexBodyCroma .modalIndexBodyCromaContenedor .modalIndexBodyCromaContenedorSub .modalIndexBodyCromaContenedorSub1 .cromaSeleccionado {
+  border: 1px solid white;
+}
+.modalIndex .modalIndexSub .modalIndexSub1 .modalIndexBody .modalIndexBodyCroma .modalIndexBodyCromaContenedor .modalIndexBodyCromaContenedorSub .modalIndexBodyCromaContenedorSub1 .cromaSeleccionado .modalIndexBodyCromaContenedorTitulo {
+  color: white;
+}
+
+.bodyIndex {
+  font-family: "Josefin Sans", sans-serif;
 }
 
 /*# sourceMappingURL=estilo.css.map */

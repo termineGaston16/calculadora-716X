@@ -424,3 +424,64 @@ function actualizarHoraYFecha() {
 setInterval(actualizarHoraYFecha, 1000);
 
 
+/* ------------------------------------ */
+/* Asignar nombre */
+document.querySelector("#btnAsignarNombre").addEventListener("click", () => {
+
+    if (document.querySelector("#portadorDeLaCalculadora").value.length < 10) {
+        if (document.querySelector("#portadorDeLaCalculadora").value == "") {
+            document.querySelector("#idcalcuAutor").innerHTML = `
+            <p class="calcuAutorContent">Esta calculadora es de: <br> --- </p>
+            `
+        } else {
+            document.querySelector("#idcalcuAutor").innerHTML = `
+            <p class="calcuAutorContent">Esta calculadora es de: <br> ${document.querySelector("#portadorDeLaCalculadora").value} </p>
+            `
+        }
+    }
+})
+
+/* ------ */
+function evaluarSiTieneAlgunCroma(claseCroma) {
+    if (document.querySelector("#idBodyIndex").classList.contains(claseCroma)) {
+        document.querySelector("#idBodyIndex").classList.remove(claseCroma)
+    }
+}
+
+/* Asignar Croma */
+document.querySelector("#btnAtardecer").addEventListener("click",()=>{
+    evaluarSiTieneAlgunCroma("cromaCian")
+    evaluarSiTieneAlgunCroma("cromaEscarlata")
+    evaluarSiTieneAlgunCroma("cromaSquidSisters")
+
+    document.querySelector("#idBodyIndex").classList.add("cromaAtardecer")
+    document.querySelector("#btnAtardecer").classList.add("cromaSeleccionado")
+})
+
+document.querySelector("#btnCian").addEventListener("click",()=>{
+    evaluarSiTieneAlgunCroma("cromaAtardecer")
+    evaluarSiTieneAlgunCroma("cromaEscarlata")
+    evaluarSiTieneAlgunCroma("cromaSquidSisters")
+
+    document.querySelector("#idBodyIndex").classList.add("cromaCian")
+    document.querySelector("#btnCian").classList.add("cromaSeleccionado")
+})
+
+document.querySelector("#btnEscarlata").addEventListener("click",()=>{
+    evaluarSiTieneAlgunCroma("cromaAtardecer")
+    evaluarSiTieneAlgunCroma("cromaCian")
+    evaluarSiTieneAlgunCroma("cromaSquidSisters")
+
+    document.querySelector("#idBodyIndex").classList.add("cromaEscarlata")
+    document.querySelector("#btnEscarlata").classList.add("cromaSeleccionado")
+})
+
+document.querySelector("#btnSquidSisters").addEventListener("click",()=>{
+    evaluarSiTieneAlgunCroma("cromaAtardecer")
+    evaluarSiTieneAlgunCroma("cromaCian")
+    evaluarSiTieneAlgunCroma("cromaEscarlata")
+
+    document.querySelector("#idBodyIndex").classList.add("cromaSquidSisters")
+    document.querySelector("#btnSquidSisters").classList.add("cromaSeleccionado")
+})
+

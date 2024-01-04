@@ -1,0 +1,104 @@
+.modalIndex {
+    background-color: rgba(0, 0, 0, 0.267);
+
+    .modalIndexSub {
+        margin-left: 62%;
+
+        .modalIndexSub1 {
+            background-color: rgb(11, 11, 12);
+            border: 1px solid white;
+
+            /* header */
+            .modalIndexHeader {
+                .modalIndexHeaderTitulo {
+                    color: white;
+                }
+
+                .modalIndexHeaderBtnClose {
+                    background-color: white !important;
+                }
+            }
+
+            /* body */
+            .modalIndexBody {
+
+                /* personalizar nombre */
+                .modalIndexBodyPersonalizarNombre {
+
+                    .modalIndexBodyPersonalizarNombreTitulo,
+                    .modalIndexBodyPersonalizarNombreDescripcion {
+                        color: white;
+                    }
+
+                    .modalIndexBodyPersonalizarNombreInput {
+                        background-color: black;
+                        width: 50%;
+
+                        border: 1px solid white;
+                        border-radius: 5px;
+
+                        color: white;
+                    }
+
+                    .modalIndexBodyPersonalizarNombrebtnAsignar {
+                        background-color: white;
+                        color: black;
+
+                        border: 1px solid white;
+                        border-radius: 10px;
+                    }
+                }
+
+                /* cambiar croma */
+                .modalIndexBodyCroma {
+
+                    .modalIndexBodyCromaTitulo,
+                    .modalIndexBodyCromaDescripcion {
+                        color: white;
+                    }
+
+                    .modalIndexBodyCromaContenedor {
+                        .modalIndexBodyCromaContenedorSub {
+                            .modalIndexBodyCromaContenedorSub1 {
+
+                                .modalIndexBodyCromaContenedorCian,
+                                .modalIndexBodyCromaContenedorAtardecer,
+                                .modalIndexBodyCromaContenedorEscarlata,
+                                .modalIndexBodyCromaContenedorSquidSisters {
+                                    background: linear-gradient(10deg, rgb(225, 251, 251), rgb(75, 255, 255));
+                                    border: none;
+
+                                    @include allCentro;
+                                    cursor: pointer;
+
+                                    .modalIndexBodyCromaContenedorTitulo {
+                                        color: rgb(0, 0, 0);
+                                    }
+                                }
+
+                                .modalIndexBodyCromaContenedorAtardecer{
+                                    background: linear-gradient(10deg, yellow, rgb(255, 64, 0));
+                                }
+                                .modalIndexBodyCromaContenedorEscarlata{
+                                    background: none;
+                                    background-color: red;
+                                }
+                                .modalIndexBodyCromaContenedorSquidSisters{
+                                    background: linear-gradient(10deg, rgb(0, 255, 30), rgb(137, 2, 255));
+                                }
+
+                                .cromaSeleccionado{
+                                    border: 1px solid white;
+                                    .modalIndexBodyCromaContenedorTitulo{
+                                        color: white;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -16,14 +16,16 @@
 
     <!-- ------------------------------------ -->
     <!-- ESTILO DE FUENTE EXTERNA -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
 
     <!-- ------------------------------------ -->
     <!-- SEO -->
 
 </head>
 
-<body class="bodyIndex">
+<body id="idBodyIndex" class="bodyIndex cromaCian">
 
     <!-- HEADER -->
     <header class="container-fluid headerIndex">
@@ -42,7 +44,8 @@
 
             <ul class="nav nav-pills headerIndexUl">
                 <li class="nav-item headerIndexLi">
-                    <button type="button" class="btn btn-primary headerIndexBotonAjustes" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-primary headerIndexBotonAjustes" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                             class="bi bi-gear-fill headerIndexBotonAjustesLogo" viewBox="0 0 16 16">
                             <path
@@ -55,23 +58,70 @@
 
 
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal fade modalIndex" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modalIndexSub">
+                <div class="modal-content modalIndexSub1">
+
+                    <!-- header -->
+                    <div class="modal-header modalIndexHeader">
+                        <h3 class="modal-title modalIndexHeaderTitulo" id="exampleModalLabel">Ajustes</h3>
+                        <button type="button" class="btn-close modalIndexHeaderBtnClose" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        ...
+
+                    <!-- body -->
+                    <div class="modal-body modalIndexBody">
+
+                        <!-- Personalizar nombre -->
+                        <div class="modalIndexBodyPersonalizarNombre">
+                            <h5 class="modalIndexBodyPersonalizarNombreTitulo">Cambiar nombre.</h5>
+                            <p class="modalIndexBodyPersonalizarNombreDescripcion">Esta calculadora es de:</p>
+                            <input class="modalIndexBodyPersonalizarNombreInput" type="text"
+                                id="portadorDeLaCalculadora" placeholder="Nombre aquí...">
+                            <button class="modalIndexBodyPersonalizarNombrebtnAsignar" id="btnAsignarNombre">Asignar
+                                nombre</button>
+                        </div>
+
+                        <br>
+
+                        <!-- Cambiar de Croma -->
+                        <div class="modalIndexBodyCroma">
+                            <h5 class="modalIndexBodyCromaTitulo">Elige el Croma.</h5>
+                            <p class="modalIndexBodyCromaDescripcion">Cambia el estilo de tu calculadora.</p>
+                            <div class="container-fluid modalIndexBodyCromaContenedor">
+                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 modalIndexBodyCromaContenedorSub">
+                                    <div class="col modalIndexBodyCromaContenedorSub1">
+                                        <div class="card shadow-sm modalIndexBodyCromaContenedorCian cromaSeleccionado" id="btnCian">
+                                            <p class="card-text modalIndexBodyCromaContenedorTitulo">Cian</p>
+                                        </div>
+                                    </div>    
+                                    <div class="col modalIndexBodyCromaContenedorSub1">
+                                        <div class="card shadow-sm modalIndexBodyCromaContenedorAtardecer" id="btnAtardecer">
+                                            <p class="card-text modalIndexBodyCromaContenedorTitulo">Atardecer</p>
+                                        </div>
+                                    </div>   
+                                    <div class="col modalIndexBodyCromaContenedorSub1">
+                                        <div class="card shadow-sm modalIndexBodyCromaContenedorEscarlata" id="btnEscarlata">
+                                            <p class="card-text modalIndexBodyCromaContenedorTitulo">Escarlata</p>
+                                        </div>
+                                    </div>   
+                                    <div class="col modalIndexBodyCromaContenedorSub1">
+                                        <div class="card shadow-sm modalIndexBodyCromaContenedorSquidSisters" id="btnSquidSisters">
+                                            <p class="card-text modalIndexBodyCromaContenedorTitulo">Squid Sisters</p>
+                                        </div>
+                                    </div>   
+
+                                </div>
+                            </div>
+
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
+
                 </div>
             </div>
         </div>
+        </div>
+
     </header>
 
     <!-- ------------------------------------ -->
@@ -86,8 +136,8 @@
                 <div class="calcuHoraYFecha" id="idCalcuHoraYFecha">
                     <p class="calcuHoraYFechaContent">00:00:00 <br> 0/0/0000</p>
                 </div>
-                <div class="calcuAutor">
-                    <p class="calcuAutorContent">Esta calculadora es de: <br> aaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                <div class="calcuAutor" id="idcalcuAutor">
+                    <p class="calcuAutorContent">Esta calculadora es de: <br> --- </p>
                 </div>
             </div>
 
