@@ -12,7 +12,19 @@ function actualizarBarraDeNumeros() {
         if (barraDeNumeros.length <= 15) {
             document.querySelector("#barraDeNumeros").innerHTML = `${barraDeNumeros}`
         } else {
-            alert("No es posible añadir más de 15 digitos")
+            Swal.fire({
+                html:`
+                        <div class="container-fluid swalAlert">
+                        <p class="swalAlertText" id="exampleModalLabel">
+                            No se pueden introducir más de 15 dígitos.
+                        </p>
+                        </div>
+                `,
+                position: "top-end",
+                showConfirmButton: false,
+                timer: 2000,
+                background: `rgba(12, 12, 12, 0)`
+              });
         }
     }
 
@@ -106,7 +118,19 @@ document.querySelector("#btnClear").addEventListener("click", () => {
 document.querySelector("#btnSuma").addEventListener("click", () => {
 
     if (barraDeNumeros == "") {
-        alert("Introduce algun numero")
+        Swal.fire({
+            html:`
+                    <div class="container-fluid swalAlert">
+                    <p class="swalAlertText" id="exampleModalLabel">
+                        Agrega un número.
+                    </p>
+                    </div>
+            `,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 2000,
+            background: `rgba(12, 12, 12, 0)`
+          });
     } else {
         logicaDeCuenta += "+";
         barraDeNumeros = "";
@@ -144,7 +168,19 @@ document.querySelector("#btnIgual").addEventListener("click", () => {
 
 
     } else {
-        alert("agrega algun numero")
+        Swal.fire({
+            html:`
+                    <div class="container-fluid swalAlert">
+                    <p class="swalAlertText" id="exampleModalLabel">
+                        Agrega un número.
+                    </p>
+                    </div>
+            `,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 2000,
+            background: `rgba(12, 12, 12, 0)`
+          });
     }
 
 })
@@ -153,7 +189,19 @@ document.querySelector("#btnIgual").addEventListener("click", () => {
 document.querySelector("#btnResta").addEventListener("click", () => {
 
     if (barraDeNumeros == "") {
-        alert("Introduce algun numero")
+        Swal.fire({
+            html:`
+                    <div class="container-fluid swalAlert">
+                    <p class="swalAlertText" id="exampleModalLabel">
+                        Agrega un número.
+                    </p>
+                    </div>
+            `,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 2000,
+            background: `rgba(12, 12, 12, 0)`
+          });
     } else {
         logicaDeCuenta += "-";
         barraDeNumeros = "";
@@ -166,7 +214,19 @@ document.querySelector("#btnResta").addEventListener("click", () => {
 document.querySelector("#btnMultiplicacion").addEventListener("click", () => {
 
     if (barraDeNumeros == "") {
-        alert("Introduce algun numero")
+        Swal.fire({
+            html:`
+                    <div class="container-fluid swalAlert">
+                    <p class="swalAlertText" id="exampleModalLabel">
+                        Agrega un número.
+                    </p>
+                    </div>
+            `,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 2000,
+            background: `rgba(12, 12, 12, 0)`
+          });
     } else {
         logicaDeCuenta += "*";
         barraDeNumeros = "";
@@ -179,7 +239,19 @@ document.querySelector("#btnMultiplicacion").addEventListener("click", () => {
 document.querySelector("#btnDivision").addEventListener("click", () => {
 
     if (barraDeNumeros == "") {
-        alert("Introduce algun numero")
+        Swal.fire({
+            html:`
+                    <div class="container-fluid swalAlert">
+                    <p class="swalAlertText" id="exampleModalLabel">
+                        Agrega un número.
+                    </p>
+                    </div>
+            `,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 2000,
+            background: `rgba(12, 12, 12, 0)`
+          });
     } else {
         logicaDeCuenta += "/";
         barraDeNumeros = "";
@@ -187,17 +259,40 @@ document.querySelector("#btnDivision").addEventListener("click", () => {
 
     }
 })
-btnPorcentaje
 
 /* Porcentaje */
 document.querySelector("#btnPorcentaje").addEventListener("click", () => {
 
     if (porcentajeOn) {
-        alert("El porcentaje ya está seleccionado")
+        Swal.fire({
+            html:`
+                    <div class="container-fluid swalAlert">
+                    <p class="swalAlertText" id="exampleModalLabel">
+                        El porcentaje ya está seleccionado.
+                    </p>
+                    </div>
+            `,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 2000,
+            background: `rgba(12, 12, 12, 0)`
+          });
     } else {
 
         if (barraDeNumeros == "") {
-            alert("Introduce algun numero")
+            Swal.fire({
+                html:`
+                        <div class="container-fluid swalAlert">
+                        <p class="swalAlertText" id="exampleModalLabel">
+                            Agrega un número.
+                        </p>
+                        </div>
+                `,
+                position: "top-end",
+                showConfirmButton: false,
+                timer: 2000,
+                background: `rgba(12, 12, 12, 0)`
+              });
         } else {
 
             porcentajeOn = true
@@ -214,7 +309,19 @@ document.querySelector("#btnPorcentaje").addEventListener("click", () => {
 document.querySelector("#btnRaiz").addEventListener("click", () => {
 
     if (barraDeNumeros == "") {
-        alert("Introduce algun numero")
+        Swal.fire({
+            html:`
+                    <div class="container-fluid swalAlert">
+                    <p class="swalAlertText" id="exampleModalLabel">
+                        Agrega un número.
+                    </p>
+                    </div>
+            `,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 2000,
+            background: `rgba(12, 12, 12, 0)`
+          });
     } else {
         let numeroTotal = 0;
         numeroTotal = eval(logicaDeCuenta);
@@ -311,7 +418,19 @@ document.addEventListener("keydown", function (event) {
     }
     if (event.key === "+") {
         if (barraDeNumeros == "") {
-            alert("Introduce algun numero")
+            Swal.fire({
+                html:`
+                        <div class="container-fluid swalAlert">
+                        <p class="swalAlertText" id="exampleModalLabel">
+                            Agrega un número.
+                        </p>
+                        </div>
+                `,
+                position: "top-end",
+                showConfirmButton: false,
+                timer: 2000,
+                background: `rgba(12, 12, 12, 0)`
+              });
         } else {
             logicaDeCuenta += "+";
             barraDeNumeros = "";
@@ -346,12 +465,36 @@ document.addEventListener("keydown", function (event) {
 
 
         } else {
-            alert("agrega algun numero")
+            Swal.fire({
+                html:`
+                        <div class="container-fluid swalAlert">
+                        <p class="swalAlertText" id="exampleModalLabel">
+                            Agrega un número.
+                        </p>
+                        </div>
+                `,
+                position: "top-end",
+                showConfirmButton: false,
+                timer: 2000,
+                background: `rgba(12, 12, 12, 0)`
+              });
         }
     }
     if (event.key === "-") {
         if (barraDeNumeros == "") {
-            alert("Introduce algun numero")
+            Swal.fire({
+                html:`
+                        <div class="container-fluid swalAlert">
+                        <p class="swalAlertText" id="exampleModalLabel">
+                            Agrega un número.
+                        </p>
+                        </div>
+                `,
+                position: "top-end",
+                showConfirmButton: false,
+                timer: 2000,
+                background: `rgba(12, 12, 12, 0)`
+              });
         } else {
             logicaDeCuenta += "-";
             barraDeNumeros = "";
@@ -361,7 +504,19 @@ document.addEventListener("keydown", function (event) {
     }
     if (event.key === "*") {
         if (barraDeNumeros == "") {
-            alert("Introduce algun numero")
+            Swal.fire({
+                html:`
+                        <div class="container-fluid swalAlert">
+                        <p class="swalAlertText" id="exampleModalLabel">
+                            Agrega un número.
+                        </p>
+                        </div>
+                `,
+                position: "top-end",
+                showConfirmButton: false,
+                timer: 2000,
+                background: `rgba(12, 12, 12, 0)`
+              });
         } else {
             logicaDeCuenta += "*";
             barraDeNumeros = "";
@@ -372,7 +527,19 @@ document.addEventListener("keydown", function (event) {
     if (event.key === "/") {
 
         if (barraDeNumeros == "") {
-            alert("Introduce algun numero")
+            Swal.fire({
+                html:`
+                        <div class="container-fluid swalAlert">
+                        <p class="swalAlertText" id="exampleModalLabel">
+                            Agrega un número.
+                        </p>
+                        </div>
+                `,
+                position: "top-end",
+                showConfirmButton: false,
+                timer: 2000,
+                background: `rgba(12, 12, 12, 0)`
+              });
         } else {
             logicaDeCuenta += "/";
             barraDeNumeros = "";
@@ -383,11 +550,35 @@ document.addEventListener("keydown", function (event) {
     if (event.key === "%") {
 
         if (porcentajeOn) {
-            alert("El porcentaje ya está seleccionado")
+            Swal.fire({
+                html:`
+                        <div class="container-fluid swalAlert">
+                        <p class="swalAlertText" id="exampleModalLabel">
+                            El porcentaje ya está seleccionado.
+                        </p>
+                        </div>
+                `,
+                position: "top-end",
+                showConfirmButton: false,
+                timer: 2000,
+                background: `rgba(12, 12, 12, 0)`
+              });
         } else {
 
             if (barraDeNumeros == "") {
-                alert("Introduce algun numero")
+                Swal.fire({
+                    html:`
+                            <div class="container-fluid swalAlert">
+                            <p class="swalAlertText" id="exampleModalLabel">
+                                Agrega un número.
+                            </p>
+                            </div>
+                    `,
+                    position: "top-end",
+                    showConfirmButton: false,
+                    timer: 2000,
+                    background: `rgba(12, 12, 12, 0)`
+                  });
             } else {
 
                 porcentajeOn = true
@@ -448,11 +639,22 @@ function evaluarSiTieneAlgunCroma(claseCroma) {
     }
 }
 
+function evaluarSiEstaSeleccionado(idDelCroma) {
+    if (document.querySelector(idDelCroma).classList.contains("cromaSeleccionado")) {
+        document.querySelector(idDelCroma).classList.remove("cromaSeleccionado")
+    }
+}
+
+
 /* Asignar Croma */
 document.querySelector("#btnAtardecer").addEventListener("click",()=>{
     evaluarSiTieneAlgunCroma("cromaCian")
     evaluarSiTieneAlgunCroma("cromaEscarlata")
     evaluarSiTieneAlgunCroma("cromaSquidSisters")
+
+    evaluarSiEstaSeleccionado("#btnCian")
+    evaluarSiEstaSeleccionado("#btnEscarlata")
+    evaluarSiEstaSeleccionado("#btnSquidSisters")
 
     document.querySelector("#idBodyIndex").classList.add("cromaAtardecer")
     document.querySelector("#btnAtardecer").classList.add("cromaSeleccionado")
@@ -463,6 +665,10 @@ document.querySelector("#btnCian").addEventListener("click",()=>{
     evaluarSiTieneAlgunCroma("cromaEscarlata")
     evaluarSiTieneAlgunCroma("cromaSquidSisters")
 
+    evaluarSiEstaSeleccionado("#btnAtardecer")
+    evaluarSiEstaSeleccionado("#btnEscarlata")
+    evaluarSiEstaSeleccionado("#btnSquidSisters")
+
     document.querySelector("#idBodyIndex").classList.add("cromaCian")
     document.querySelector("#btnCian").classList.add("cromaSeleccionado")
 })
@@ -472,6 +678,10 @@ document.querySelector("#btnEscarlata").addEventListener("click",()=>{
     evaluarSiTieneAlgunCroma("cromaCian")
     evaluarSiTieneAlgunCroma("cromaSquidSisters")
 
+    evaluarSiEstaSeleccionado("#btnAtardecer")
+    evaluarSiEstaSeleccionado("#btnCian")
+    evaluarSiEstaSeleccionado("#btnSquidSisters")
+
     document.querySelector("#idBodyIndex").classList.add("cromaEscarlata")
     document.querySelector("#btnEscarlata").classList.add("cromaSeleccionado")
 })
@@ -480,6 +690,10 @@ document.querySelector("#btnSquidSisters").addEventListener("click",()=>{
     evaluarSiTieneAlgunCroma("cromaAtardecer")
     evaluarSiTieneAlgunCroma("cromaCian")
     evaluarSiTieneAlgunCroma("cromaEscarlata")
+
+    evaluarSiEstaSeleccionado("#btnAtardecer")
+    evaluarSiEstaSeleccionado("#btnCian")
+    evaluarSiEstaSeleccionado("#btnEscarlata")
 
     document.querySelector("#idBodyIndex").classList.add("cromaSquidSisters")
     document.querySelector("#btnSquidSisters").classList.add("cromaSeleccionado")

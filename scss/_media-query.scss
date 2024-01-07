@@ -1,0 +1,66 @@
+/* ----------- 0 :: 575 ----------- */
+
+@media(min-width: 0px) and (max-width: 575px) {
+    
+    .modalIndex {
+        .modalIndexSub {
+            margin-left: 10%;
+            width: 80%;
+
+        }
+    }
+    
+    .mainIndex {
+
+        /* cuerpo */
+        .calcuCuerpo {
+            width: 90vw;
+            height: 90vh;
+
+            /* cabeza */
+            .calcuCabeza {
+                height: 30%;
+
+                .calcuHoraYFecha,
+                .calcuAutor {
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+}
+
+/* ----------- 576 :: 1083 ----------- */
+
+@media(min-width: 576px) and (max-width: 1083px) {
+    
+    .modalIndex {
+        .modalIndexSub {
+            width: 60%;
+            margin-left: 5%;
+
+        }
+    }
+    
+    
+    .mainIndex {
+
+        /* cuerpo */
+        .calcuCuerpo {
+            width: 60vw;
+            height: 90vh;
+
+            /* cabeza */
+            .calcuCabeza {
+                height: 30%;
+
+                .calcuHoraYFecha,
+                .calcuAutor {
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+}

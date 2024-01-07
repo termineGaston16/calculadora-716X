@@ -76,20 +76,23 @@
                                     }
                                 }
 
-                                .modalIndexBodyCromaContenedorAtardecer{
+                                .modalIndexBodyCromaContenedorAtardecer {
                                     background: linear-gradient(10deg, yellow, rgb(255, 64, 0));
                                 }
-                                .modalIndexBodyCromaContenedorEscarlata{
+
+                                .modalIndexBodyCromaContenedorEscarlata {
                                     background: none;
                                     background-color: red;
                                 }
-                                .modalIndexBodyCromaContenedorSquidSisters{
+
+                                .modalIndexBodyCromaContenedorSquidSisters {
                                     background: linear-gradient(10deg, rgb(0, 255, 30), rgb(137, 2, 255));
                                 }
 
-                                .cromaSeleccionado{
+                                .cromaSeleccionado {
                                     border: 1px solid white;
-                                    .modalIndexBodyCromaContenedorTitulo{
+
+                                    .modalIndexBodyCromaContenedorTitulo {
                                         color: white;
                                     }
                                 }
@@ -100,5 +103,21 @@
                 }
             }
         }
+    }
+}
+
+
+.swalAlert {
+    @include allCentro;
+    background-color: rgba(12, 12, 12, 0.894);
+
+    border-radius: 10px;
+
+    .swalAlertText {
+        text-align: center;
+        margin-top: 5%;
+
+        font-size: 1.0rem;
+        color: white;
     }
 }

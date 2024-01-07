@@ -518,6 +518,64 @@ html {
   color: white;
 }
 
+.swalAlert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(12, 12, 12, 0.894);
+  border-radius: 10px;
+}
+.swalAlert .swalAlertText {
+  text-align: center;
+  margin-top: 5%;
+  font-size: 1rem;
+  color: white;
+}
+
+/* ----------- 0 :: 575 ----------- */
+@media (min-width: 0px) and (max-width: 575px) {
+  .modalIndex .modalIndexSub {
+    margin-left: 10%;
+    width: 80%;
+  }
+  .mainIndex {
+    /* cuerpo */
+  }
+  .mainIndex .calcuCuerpo {
+    width: 90vw;
+    height: 90vh;
+    /* cabeza */
+  }
+  .mainIndex .calcuCuerpo .calcuCabeza {
+    height: 30%;
+  }
+  .mainIndex .calcuCuerpo .calcuCabeza .calcuHoraYFecha,
+  .mainIndex .calcuCuerpo .calcuCabeza .calcuAutor {
+    width: 100%;
+  }
+}
+/* ----------- 576 :: 1083 ----------- */
+@media (min-width: 576px) and (max-width: 1083px) {
+  .modalIndex .modalIndexSub {
+    width: 60%;
+    margin-left: 5%;
+  }
+  .mainIndex {
+    /* cuerpo */
+  }
+  .mainIndex .calcuCuerpo {
+    width: 60vw;
+    height: 90vh;
+    /* cabeza */
+  }
+  .mainIndex .calcuCuerpo .calcuCabeza {
+    height: 30%;
+  }
+  .mainIndex .calcuCuerpo .calcuCabeza .calcuHoraYFecha,
+  .mainIndex .calcuCuerpo .calcuCabeza .calcuAutor {
+    width: 100%;
+  }
+}
 .bodyIndex {
   font-family: "Josefin Sans", sans-serif;
 }

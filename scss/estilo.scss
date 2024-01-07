@@ -13,6 +13,7 @@ html {
 
 /* IMPORTS */
 @import "mixin", "main", "header", "cromas","modal";
+@import "media-query";
 
 .bodyIndex {
     font-family: 'Josefin Sans', sans-serif;
